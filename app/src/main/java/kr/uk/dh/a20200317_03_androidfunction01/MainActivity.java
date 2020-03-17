@@ -33,7 +33,11 @@ public class MainActivity extends AppCompatActivity {
         binding.goToSencondBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String inputMessage = binding.inputEdt.getText().toString();
                 Intent intent = new Intent (MainActivity.this,SecondActivity.class);
+//                inputMessage변수를, "message"라는 이름표를 붙여서 첨부.
+                intent.putExtra("message", inputMessage);
                 startActivity(intent);
             }
         });
