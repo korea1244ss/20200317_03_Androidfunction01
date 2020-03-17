@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         binding.goToSencondBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent (MainActivity.this,SecondActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -19,7 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="첫 화면으로 이동 "/>
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="두번째 화면으로 이동"/>
 
         <Button
             android:id="@+id/goToSencondBtn"
